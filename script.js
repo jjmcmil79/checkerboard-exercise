@@ -37,3 +37,5 @@ function generateRandomColor() {
   var randomColor=generateRandomColor();//"#F10531"
 
   console.log(randomColor)
+
+  
