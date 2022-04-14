@@ -14,13 +14,29 @@ function checkerboard() {
         tempDiv.style.paddingBottom = '11.1%'
 
         if (e % 2 === 0) {
-            tempDiv.style.backgroundColor = 'red';
+            tempDiv.style.backgroundColor = generateRandomColor();
 
         }   else {
-            tempDiv.style.backgroundColor = 'black';
+            tempDiv.style.backgroundColor = generateRandomColor();
         }
         document.body.appendChild(tempDiv)
 
     
     }
 }
+
+
+function generateRandomColor() {
+    var letters = '0123456789ABCDEF';
+    var color = '#';
+    for (var i = 0; i < 6; i++) {
+      color += letters[Math.floor(Math.random() * 16)];
+    }
+    return color;
+  }
+  
+  var randomColor=generateRandomColor();//"#F10531"
+
+ 
+
+  
