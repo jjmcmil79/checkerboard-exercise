@@ -7,6 +7,8 @@ checkerboard()
 
 
 function checkerboard() {
+    let body = document.getElementsByTagName('body')[0]
+    body.style.background = "linear-gradient(135deg, purple, yellow)"
     for (let e = 0; e < 153; e++) {
         let tempDiv = document.createElement('div');
         tempDiv.style.width = "11.1%"
@@ -14,28 +16,16 @@ function checkerboard() {
         tempDiv.style.paddingBottom = '11.1%'
 
         if (e % 2 === 0) {
-            tempDiv.style.backgroundColor = generateRandomColor();
+            tempDiv.style.backgroundColor = 'purple';
 
-        }   else {
-            tempDiv.style.backgroundColor = generateRandomColor();
-        }
-        document.body.appendChild(tempDiv)
+        }   
+            
+        body.appendChild(tempDiv)
+    }
 
     
-    }
 }
 
-
-function generateRandomColor() {
-    var letters = '0123456789ABCDEF';
-    var color = '#';
-    for (var i = 0; i < 6; i++) {
-      color += letters[Math.floor(Math.random() * 16)];
-    }
-    return color;
-  }
-  
-  var randomColor=generateRandomColor();//"#F10531"
 
  
 
