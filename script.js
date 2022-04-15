@@ -19,8 +19,8 @@ function checkerboard() {
         }   else {
             tempDiv.style.backgroundColor = 'black';
         }
+        
         document.body.appendChild(tempDiv)
-
     
     }
 }
