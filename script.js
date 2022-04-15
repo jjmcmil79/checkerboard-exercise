@@ -7,7 +7,8 @@ checkerboard()
 
 
 function checkerboard() {
-    for (let e = 0; e < 153; e++) {
+    let body = document.getElementsByTagName('body')[0]
+       for (let e = 0; e < 153; e++) {
         let tempDiv = document.createElement('div');
         tempDiv.style.width = "11.1%"
         tempDiv.style.float = 'left'
