@@ -19,8 +19,8 @@ function checkerboard() {
             tempDiv.style.backgroundColor = 'purple';
 
         }   
-            
-        body.appendChild(tempDiv)
+        body.appendChild(tempDiv)   
+        
     }
 
     
